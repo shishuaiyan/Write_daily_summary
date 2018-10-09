@@ -29,37 +29,37 @@ def getstr():
     str_time = input("热车时间： ")
     if str_time:
         split_s = str_time.split(' ')
-        summary_data['热车'] = split_s[0]+':'+split_s[1]+':'+split_s[2]
+        summary_data['热车'] = '{:0>2d}:{:0>2d}:{:0>2d}'.format(split_s[0],split_s[1],split_s[2])
 
     str_time = input("热车完毕时间： ")
     if str_time:
         split_s = str_time.split(' ')
-        summary_data['热车完毕'] = split_s[0]+':'+split_s[1]+':'+split_s[2]
+        summary_data['热车完毕'] = '{:0>2d}:{:0>2d}:{:0>2d}'.format(split_s[0],split_s[1],split_s[2])
 
     str_time = input("准备起飞时间： ")
     if str_time:
         split_s = str_time.split(' ')
-        summary_data['准备起飞'] = split_s[0]+':'+split_s[1]+':'+split_s[2]
+        summary_data['准备起飞'] = '{:0>2d}:{:0>2d}:{:0>2d}'.format(split_s[0],split_s[1],split_s[2])
         
     str_time = input("离地时间： ")
     if str_time:
         split_s = str_time.split(' ')
-        summary_data['离地'] = split_s[0]+':'+split_s[1]+':'+split_s[2]
+        summary_data['离地'] = '{:0>2d}:{:0>2d}:{:0>2d}'.format(split_s[0],split_s[1],split_s[2])
     
     str_time = input("到达预定位置时间： ")
     if str_time:
         split_s = str_time.split(' ')
-        summary_data['到达预定位置'] = split_s[0]+':'+split_s[1]+':'+split_s[2]
+        summary_data['到达预定位置'] = '{:0>2d}:{:0>2d}:{:0>2d}'.format(split_s[0],split_s[1],split_s[2])
     
     str_time = input("返航时间： ")
     if str_time:
         split_s = str_time.split(' ')
-        summary_data['返航'] = split_s[0]+':'+split_s[1]+':'+split_s[2]
+        summary_data['返航'] = '{:0>2d}:{:0>2d}:{:0>2d}'.format(split_s[0],split_s[1],split_s[2])
     
     str_time = input("着陆时间： ")
     if str_time:
         split_s = str_time.split(' ')
-        summary_data['着陆'] = split_s[0]+':'+split_s[1]+':'+split_s[2]
+        summary_data['着陆'] = '{:0>2d}:{:0>2d}:{:0>2d}'.format(split_s[0],split_s[1],split_s[2])
 
 
     str_location = input('预定位置1/2： ')
